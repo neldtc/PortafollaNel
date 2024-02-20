@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+---
+
+<Layout title="Portfolio de Nel.">
+	<main>
+	
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<h1
+				class="text-5xl font-bold flex justify-center flex-row gap-x-4 pb-4"
+			>
+				Hi, I am Nel <div class="flex justify-center">
+					<Badge>Actualmente traballando</Badge>
+				</div>
+			</h1>
+			<h2 class="text-2xl opacity-80 text-wrap">
+				<span>10 Ano de experiencia.</span><span class="opacity-80"> Aprendizaxe e ensino de linguas.</span>
+				Orixinario de Santiago de Compostela, Galiza.
+			</h2>
+			<ul></ul>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		max-width: 800px;
+		
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
